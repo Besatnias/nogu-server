@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    style input,textarea{margin:5px;}
+    h1= title
+    form(action="/post" method="post")
+        fieldset
+            label(for="nombre") Nombre:
+            br
+            input(type="text" placeholder="Tu nombre (opcional)")
+            br
+            br
+            label(for="mensaje") Mensaje:
+            br
+            textarea(name="mensaje" placeholder="Tu mensaje...")
+
+        input(type="submit")
